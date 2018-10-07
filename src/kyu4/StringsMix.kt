@@ -1,3 +1,7 @@
+/**
+ * https://www.codewars.com/kata/5629db57620258aa9d000014
+ */
+
 package kyu4
 
 import kotlin.test.assertEquals
@@ -5,7 +9,8 @@ import kotlin.test.assertEquals
 fun main(args: Array<String>) {
     val s1 = "my&friend&Paul has heavy hats! &"
     val s2 = "my friend John has many many friends &"
-    assertEquals(mix(s1, s2), "2:nnnnn/1:aaaa/1:hhh/2:mmm/2:yyy/2:dd/2:ff/2:ii/2:rr/=:ee/=:ss")
+    val expected = "2:nnnnn/1:aaaa/1:hhh/2:mmm/2:yyy/2:dd/2:ff/2:ii/2:rr/=:ee/=:ss"
+    assertEquals(expected, mix(s1, s2))
 }
 
 fun mix(s1: String, s2: String): String {
